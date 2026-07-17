@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nepalese Student Organization – MTU</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-nso">NSO</span>
+        <span class="logo-mtu">MTU</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home"       class="nav-link active">Home</a></li>
+        <li><a href="#about"      class="nav-link">About Us</a></li>
+        <li><a href="#events"     class="nav-link">Events</a></li>
+        <li><a href="#incoming"   class="nav-link">Incoming Students</a></li>
+        <li><a href="#membership" class="nav-link">Become a Member</a></li>
+        <li><a href="#resources"  class="nav-link">Resources</a></li>
+        <li><a href="#videos"     class="nav-link">Our Videos</a></li>
+        <li><a href="#gallery"    class="nav-link">Gallery</a></li>
+        <li><a href="#contact"    class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO CAROUSEL ── -->
+  <section class="hero" id="home">
+    <div class="carousel-track" id="carouselTrack">
+
+      <div class="slide slide-1">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1>We're a Community</h1>
+          <p>Building Friendship, Mutual Respect &amp; Welfare</p>
+          <a href="#about" class="btn-hero">Learn More</a>
+        </div>
+      </div>
+
+      <div class="slide slide-2">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1>Connecting Nepali Students</h1>
+          <p>Your Home Away from Home at Michigan Tech</p>
+          <a href="#membership" class="btn-hero">Join Us</a>
+        </div>
+      </div>
+
+      <div class="slide slide-3">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <h1>Celebrate Our Culture</h1>
+          <p>Dashain · Tihar · Holi · Teej &amp; More</p>
+          <a href="#events" class="btn-hero">See Events</a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-arrow prev" id="prevBtn" aria-label="Previous slide">&#10094;</button>
+    <button class="carousel-arrow next" id="nextBtn" aria-label="Next slide">&#10095;</button>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Us</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Nepalese Student Organization at MTU</h3>
+          <p>The Nepalese Student Organization (NSO) at Michigan Technological University is a vibrant community dedicated to fostering cultural exchange, academic solidarity, and lifelong friendships among Nepali students and friends of Nepal.</p>
+          <p>We celebrate the richness of Nepali culture, support one another through the challenges of student life, and create a welcoming home away from home in the Upper Peninsula of Michigan.</p>
+          <a href="#membership" class="btn-primary">Join Our Community</a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">20+</span>
+            <span class="stat-lbl">Members</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-lbl">Annual Events</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-lbl">Years Active</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">🇳🇵</span>
+            <span class="stat-lbl">Proudly Nepali</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EVENTS ── -->
+  <section class="section events bg-light" id="events">
+    <div class="container">
+      <div class="section-header">
+        <h2>Upcoming Events</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="events-grid">
+
+        <article class="event-card">
+          <div class="event-date">
+            <span class="ev-month">OCT</span>
+            <span class="ev-day">15</span>
+          </div>
+          <div class="event-info">
+            <h4>Dashain Celebration 2025</h4>
+            <p><i class="fas fa-map-marker-alt"></i> MUB Ballroom, MTU</p>
+            <p><i class="fas fa-clock"></i> 6:00 PM – 10:00 PM</p>
+            <a href="#contact" class="event-link">Learn More &rarr;</a>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-date">
+            <span class="ev-month">NOV</span>
+            <span class="ev-day">03</span>
+          </div>
+          <div class="event-info">
+            <h4>Tihar – Festival of Lights</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Student Development Complex</p>
+            <p><i class="fas fa-clock"></i> 7:00 PM – 11:00 PM</p>
+            <a href="#contact" class="event-link">Learn More &rarr;</a>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-date">
+            <span class="ev-month">APR</span>
+            <span class="ev-day">13</span>
+          </div>
+          <div class="event-info">
+            <h4>Nepali New Year (Naya Barsha)</h4>
+            <p><i class="fas fa-map-marker-alt"></i> TBD</p>
+            <p><i class="fas fa-clock"></i> 5:00 PM – 9:00 PM</p>
+            <a href="#contact" class="event-link">Learn More &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── QUICK LINKS (Incoming / Membership / Resources) ── -->
+  <section class="quick-links" id="incoming">
+    <div class="container">
+      <div class="links-grid">
+
+        <div class="link-card">
+          <div class="lc-icon"><i class="fas fa-plane-arrival"></i></div>
+          <h3>Incoming Students</h3>
+          <p>New to MTU? We'll help you settle in, find housing, connect with peers, and navigate life in Houghton from day one.</p>
+          <a href="#contact" class="btn-outline">Get Help</a>
+        </div>
+
+        <div class="link-card featured" id="membership">
+          <div class="lc-icon"><i class="fas fa-users"></i></div>
+          <h3>Become a Member</h3>
+          <p>Join the NSO family! Attend exclusive events, build a network, and be part of a community that feels like home.</p>
+          <a href="#contact" class="btn-white">Join Now</a>
+        </div>
+
+        <div class="link-card" id="resources">
+          <div class="lc-icon"><i class="fas fa-book-open"></i></div>
+          <h3>Resources</h3>
+          <p>Find resources on academics, immigration (F-1 visa), cultural adaptation, scholarships, and life at Michigan Tech.</p>
+          <a href="#contact" class="btn-outline">View Resources</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VIDEOS ── -->
+  <section class="section videos bg-dark" id="videos">
+    <div class="container">
+      <div class="section-header light">
+        <h2>Our Videos</h2>
+        <div class="underline white"></div>
+      </div>
+      <!-- Videos rendered by JS -->
+      <div class="video-grid" id="videosContainer"></div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ── -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2>Gallery</h2>
+        <div class="underline"></div>
+        <p class="gallery-sub">Browse photos by event</p>
+      </div>
+      <!-- Albums rendered by JS -->
+      <div class="albums-grid" id="albumsContainer"></div>
+    </div>
+  </section>
+
+  <!-- Album modal (rendered by JS) -->
+  <div class="album-modal" id="albumModal" role="dialog" aria-modal="true" aria-label="Photo album">
+    <div class="album-modal-box">
+      <div class="album-modal-header">
+        <h3 id="albumModalTitle"></h3>
+        <button class="modal-close" id="albumModalClose" aria-label="Close">&times;</button>
+      </div>
+      <div class="album-photos-grid" id="albumPhotosGrid"></div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Previous">&#10094;</button>
+    <div class="lb-img-wrap">
+      <img src="" alt="Gallery photo" id="lbImg" />
+    </div>
+    <button class="lb-arrow lb-next" id="lbNext" aria-label="Next">&#10095;</button>
+    <div class="lb-counter" id="lbCounter"></div>
+  </div>
+
+  <!-- ── CONTACT ── -->
+  <section class="section contact bg-light" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <div class="ci-item">
+            <i class="fas fa-envelope"></i>
+            <span>nso@mtu.edu</span>
+          </div>
+          <div class="ci-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Michigan Technological University<br>1400 Townsend Drive<br>Houghton, MI 49931</span>
+          </div>
+          <div class="ci-item">
+            <i class="fab fa-instagram"></i>
+            <span>@nso_mtu</span>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="cs-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#" class="cs-btn"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#" class="cs-btn"><i class="fab fa-youtube"></i> YouTube</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text"  name="name"    placeholder="Your Name"  required />
+            <input type="email" name="email"   placeholder="Your Email" required />
+          </div>
+          <input type="text" name="subject" placeholder="Subject" />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn-primary">Send Message</button>
+          <p class="form-success" id="formSuccess">Message sent! We'll be in touch soon.</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <h3>NSO @ MTU</h3>
+          <p>Nepalese Student Organization<br>Michigan Technological University</p>
+          <p class="footer-tagline">"एक समुदाय, एक परिवार"<br><em>One Community, One Family</em></p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#incoming">Incoming Students</a></li>
+            <li><a href="#membership">Become a Member</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="footer-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+          <p class="footer-mtu">A recognized student organization at<br><strong>Michigan Tech</strong></p>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Nepalese Student Organization at MTU. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
