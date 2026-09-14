@@ -51,6 +51,45 @@ const VIDEOS = [
 /* ═══════════════════════════════════════════════════════════ */
 
 
+/* ═══════════════════════════════════════════════════════════
+   EVENTS CONFIG — edit this to add/remove upcoming events
+   ═══════════════════════════════════════════════════════════
+   Each event:
+     month     – short month label shown on the date badge, e.g. 'OCT'
+     day       – day-of-month shown on the date badge, e.g. '15'
+     title     – event name
+     location  – shown next to the pin icon
+     time      – shown next to the clock icon
+     link      – (optional) where "Learn More" goes; defaults to #contact
+═══════════════════════════════════════════════════════════ */
+const EVENTS = [
+  {
+    month:    'OCT',
+    day:      '15',
+    title:    'Dashain Celebration 2025',
+    location: 'MUB Ballroom, MTU',
+    time:     '6:00 PM – 10:00 PM'
+  },
+  {
+    month:    'NOV',
+    day:      '03',
+    title:    'Tihar – Festival of Lights',
+    location: 'Student Development Complex',
+    time:     '7:00 PM – 11:00 PM'
+  },
+  {
+    month:    'APR',
+    day:      '13',
+    title:    'Nepali New Year (Naya Barsha)',
+    location: 'TBD',
+    time:     '5:00 PM – 9:00 PM'
+  }
+  // Add more events like this:
+  // { month: 'DEC', day: '05', title: 'Winter Social', location: 'MUB Alumni Lounge', time: '6:00 PM – 8:00 PM' }
+];
+/* ═══════════════════════════════════════════════════════════ */
+
+
 /* ── Carousel ── */
 (function () {
   const track    = document.getElementById('carouselTrack');
@@ -162,14 +201,29 @@ const VIDEOS = [
 (function () {
   const form    = document.getElementById('contactForm');
   const success = document.getElementById('formSuccess');
+  const error   = document.getElementById('formError');
   if (!form) return;
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    if (success) {
-      success.classList.add('visible');
-      form.reset();
-      setTimeout(() => success.classList.remove('visible'), 6000);
+    error.classList.remove('visible');
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        success.classList.add('visible');
+        form.reset();
+        setTimeout(() => success.classList.remove('visible'), 6000);
+      } else {
+        error.classList.add('visible');
+      }
+    } catch {
+      error.classList.add('visible');
     }
   });
 })();
@@ -303,6 +357,31 @@ const VIDEOS = [
     if (modal.classList.contains('open') && e.key === 'Escape') {
       closeAlbum();
     }
+  });
+})();
+
+
+/* ── Events ── */
+(function () {
+  const container = document.getElementById('eventsContainer');
+  if (!container || !EVENTS.length) return;
+
+  EVENTS.forEach(ev => {
+    const card = document.createElement('article');
+    card.className = 'event-card fade-in';
+    card.innerHTML = `
+      <div class="event-date">
+        <span class="ev-month">${ev.month}</span>
+        <span class="ev-day">${ev.day}</span>
+      </div>
+      <div class="event-info">
+        <h4>${ev.title}</h4>
+        <p><i class="fas fa-map-marker-alt"></i> ${ev.location}</p>
+        <p><i class="fas fa-clock"></i> ${ev.time}</p>
+        <a href="${ev.link || '#contact'}" class="event-link">Learn More &rarr;</a>
+      </div>
+    `;
+    container.appendChild(card);
   });
 })();
 
