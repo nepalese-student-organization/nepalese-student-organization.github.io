@@ -27,6 +27,7 @@
         <li><a href="#resources"  class="nav-link">Resources</a></li>
         <li><a href="#videos"     class="nav-link">Our Videos</a></li>
         <li><a href="#gallery"    class="nav-link">Gallery</a></li>
+        <li><a href="#team"       class="nav-link">Our Team</a></li>
         <li><a href="#contact"    class="nav-link">Contact Us</a></li>
       </ul>
 
@@ -124,48 +125,8 @@
         <h2>Upcoming Events</h2>
         <div class="underline"></div>
       </div>
-      <div class="events-grid">
-
-        <article class="event-card">
-          <div class="event-date">
-            <span class="ev-month">OCT</span>
-            <span class="ev-day">15</span>
-          </div>
-          <div class="event-info">
-            <h4>Dashain Celebration 2025</h4>
-            <p><i class="fas fa-map-marker-alt"></i> MUB Ballroom, MTU</p>
-            <p><i class="fas fa-clock"></i> 6:00 PM – 10:00 PM</p>
-            <a href="#contact" class="event-link">Learn More &rarr;</a>
-          </div>
-        </article>
-
-        <article class="event-card">
-          <div class="event-date">
-            <span class="ev-month">NOV</span>
-            <span class="ev-day">03</span>
-          </div>
-          <div class="event-info">
-            <h4>Tihar – Festival of Lights</h4>
-            <p><i class="fas fa-map-marker-alt"></i> Student Development Complex</p>
-            <p><i class="fas fa-clock"></i> 7:00 PM – 11:00 PM</p>
-            <a href="#contact" class="event-link">Learn More &rarr;</a>
-          </div>
-        </article>
-
-        <article class="event-card">
-          <div class="event-date">
-            <span class="ev-month">APR</span>
-            <span class="ev-day">13</span>
-          </div>
-          <div class="event-info">
-            <h4>Nepali New Year (Naya Barsha)</h4>
-            <p><i class="fas fa-map-marker-alt"></i> TBD</p>
-            <p><i class="fas fa-clock"></i> 5:00 PM – 9:00 PM</p>
-            <a href="#contact" class="event-link">Learn More &rarr;</a>
-          </div>
-        </article>
-
-      </div>
+      <!-- Events rendered by JS — edit the EVENTS list in js/main.js to add/remove one -->
+      <div class="events-grid" id="eventsContainer"></div>
     </div>
   </section>
 
@@ -246,8 +207,167 @@
     <div class="lb-counter" id="lbCounter"></div>
   </div>
 
+  <!-- ── TEAM ── -->
+  <!-- To add a member: copy one .team-card block and edit the photo src, name,
+       role, bio, and social links. Delete any <a> social link a member doesn't have. -->
+  <section class="section team bg-light" id="team">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Team</h2>
+        <div class="underline"></div>
+      </div>
+
+      <h3 class="team-subheading">Current Board Members</h3>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <img class="team-photo" src="images/team/manoj_kumal.png" alt="Photo of Manoj Kumal" />
+          <h4>Manoj Kumal</h4>
+          <p class="team-bio">Ph.D. in CS&amp;E</p>
+          <p class="team-role">President</p>
+          <div class="team-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/manojkumal/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img class="team-photo" src="images/team/rochak_dhakal.jpeg" alt="Photo of Rochak Dhakal" />
+          <h4>Rochak Dhakal</h4>
+          <p class="team-bio">Ph.D. in CS&amp;E</p>
+          <p class="team-role">Treasurer</p>
+          <div class="team-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/rochakdhakal/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img class="team-photo" src="images/team/sneha_poudel.jpeg" alt="Photo of Sneha Poudel" />
+          <h4>Sneha Poudel</h4>
+          <p class="team-bio">Ph.D. in Mechanical Engineering</p>
+          <p class="team-role">Secretary</p>
+          <div class="team-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/snehapoudel28/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="team-subheading">Alumni</h3>
+
+      <!-- Alumni are grouped by graduation year. To add a new year, copy one
+           .alumni-year block. To add a graduate, copy one .team-card inside
+           it and edit the photo src, name, and Facebook link. -->
+
+      <div class="alumni-year">
+        <h4 class="alumni-year-label">Class of 2026</h4>
+        <div class="team-grid">
+
+          <div class="team-card">
+            <img class="team-photo" src="images/team/priyanka_dhamala.jpg" alt="Photo of Priyanka Dhamala" />
+            <h4>Priyanka Dhamala</h4>
+            <p class="team-bio">Master's in Geology</p>
+            <div class="team-socials">
+              <a href="https://www.facebook.com/share/1HQkT5uYsZ/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/priyanka-dhamala/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img class="team-photo" src="images/team/subash_pandey.jpeg" alt="Photo of Subash Pandey" />
+            <h4>Subash Pandey</h4>
+            <p class="team-bio">Ph.D. in Chemistry</p>
+            <div class="team-socials">
+              <a href="https://www.facebook.com/share/1HMqNEDzHM/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/subash-pandey-ph-d-545047159/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img class="team-photo" src="images/team/suwash_silwal.jpg" alt="Photo of Suwash Silwal" />
+            <h4>Suwash Silwal</h4>
+            <p class="team-bio">Ph.D. in Statistics</p>
+            <div class="team-socials">
+              <a href="https://www.facebook.com/share/19grw2yLMN/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/ssilwal050/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- <div class="alumni-year">
+        <h4 class="alumni-year-label">Class of 2024</h4>
+        <div class="team-grid">
+
+          <div class="team-card">
+            <img class="team-photo" src="images/team/placeholder.svg" alt="Photo of Member Name" />
+            <h4>Member Name</h4>
+            <p class="team-bio">Add a short bio here — e.g. major, hometown, or fun fact.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img class="team-photo" src="images/team/placeholder.svg" alt="Photo of Member Name" />
+            <h4>Member Name</h4>
+            <p class="team-bio">Add a short bio here — e.g. major, hometown, or fun fact.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img class="team-photo" src="images/team/placeholder.svg" alt="Photo of Member Name" />
+            <h4>Member Name</h4>
+            <p class="team-bio">Add a short bio here — e.g. major, hometown, or fun fact.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="alumni-year">
+        <h4 class="alumni-year-label">Class of 2023</h4>
+        <div class="team-grid">
+
+          <div class="team-card">
+            <img class="team-photo" src="images/team/placeholder.svg" alt="Photo of Member Name" />
+            <h4>Member Name</h4>
+            <p class="team-bio">Add a short bio here — e.g. major, hometown, or fun fact.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <img class="team-photo" src="images/team/placeholder.svg" alt="Photo of Member Name" />
+            <h4>Member Name</h4>
+            <p class="team-bio">Add a short bio here — e.g. major, hometown, or fun fact.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+
   <!-- ── CONTACT ── -->
-  <section class="section contact bg-light" id="contact">
+  <section class="section contact bg-offwhite" id="contact">
     <div class="container">
       <div class="section-header">
         <h2>Contact Us</h2>
@@ -276,7 +396,8 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm">
+        <!-- Sends via Formspree since GitHub Pages can't run server code. -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mppaoaop" method="POST">
           <div class="form-row">
             <input type="text"  name="name"    placeholder="Your Name"  required />
             <input type="email" name="email"   placeholder="Your Email" required />
@@ -285,6 +406,7 @@
           <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
           <button type="submit" class="btn-primary">Send Message</button>
           <p class="form-success" id="formSuccess">Message sent! We'll be in touch soon.</p>
+          <p class="form-error" id="formError">Something went wrong — please email us directly at nso@mtu.edu.</p>
         </form>
 
       </div>
@@ -310,6 +432,7 @@
             <li><a href="#incoming">Incoming Students</a></li>
             <li><a href="#membership">Become a Member</a></li>
             <li><a href="#resources">Resources</a></li>
+            <li><a href="#team">Our Team</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
